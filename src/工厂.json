@@ -1,0 +1,1253 @@
+{
+    "map_id": "394ddee9530254590c7d",
+    "qr_codes": [
+        {
+            "id": 1,
+            "qr_code": 1190010000,
+            "x": 0.0,
+            "y": 0.0,
+            "angle": 0.0,
+            "station_type": "station",
+            "station_name": "P1",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 4,
+            "qr_code": 1024010000,
+            "x": 0.0,
+            "y": 83.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 5,
+            "qr_code": 1036010000,
+            "x": 0.0,
+            "y": 77.0,
+            "angle": 360.0,
+            "station_type": "standby",
+            "station_name": "c3",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 6,
+            "qr_code": 1051010000,
+            "x": 0.0,
+            "y": 69.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 7,
+            "qr_code": 1063010000,
+            "x": 0.0,
+            "y": 63.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 8,
+            "qr_code": 1075010000,
+            "x": 0.0,
+            "y": 57.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 9,
+            "qr_code": 1087010000,
+            "x": 0.0,
+            "y": 51.5,
+            "angle": 360.0,
+            "station_type": "charger",
+            "station_name": "c2",
+            "charge_distance": 200.0
+        },
+        {
+            "id": 10,
+            "qr_code": 1103010000,
+            "x": 0.0,
+            "y": 43.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 11,
+            "qr_code": 1115010000,
+            "x": 0.0,
+            "y": 37.5,
+            "angle": 360.0,
+            "station_type": "charger",
+            "station_name": "c1",
+            "charge_distance": 200.0
+        },
+        {
+            "id": 13,
+            "qr_code": 1139010000,
+            "x": 0.0,
+            "y": 25.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 15,
+            "qr_code": 1166010000,
+            "x": 0.0,
+            "y": 12.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 19,
+            "qr_code": 1024010140,
+            "x": 7.0,
+            "y": 83.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 20,
+            "qr_code": 1036010140,
+            "x": 7.0,
+            "y": 77.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 21,
+            "qr_code": 1051010140,
+            "x": 7.0,
+            "y": 69.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 22,
+            "qr_code": 1063010140,
+            "x": 7.0,
+            "y": 63.5,
+            "angle": 0.0,
+            "station_type": "standby",
+            "station_name": "s1",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 23,
+            "qr_code": 1075010140,
+            "x": 7.0,
+            "y": 57.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 24,
+            "qr_code": 1087010140,
+            "x": 7.0,
+            "y": 51.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 25,
+            "qr_code": 1103010140,
+            "x": 7.0,
+            "y": 43.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 26,
+            "qr_code": 1115010140,
+            "x": 7.0,
+            "y": 37.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 27,
+            "qr_code": 1127010140,
+            "x": 7.0,
+            "y": 31.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 28,
+            "qr_code": 1139010140,
+            "x": 7.0,
+            "y": 25.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 30,
+            "qr_code": 1166010140,
+            "x": 7.0,
+            "y": 12.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 31,
+            "qr_code": 1178010140,
+            "x": 7.0,
+            "y": 6.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 32,
+            "qr_code": 1190010140,
+            "x": 7.0,
+            "y": 0.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 35,
+            "qr_code": 1024010280,
+            "x": 14.0,
+            "y": 83.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 36,
+            "qr_code": 1036010280,
+            "x": 14.0,
+            "y": 77.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 38,
+            "qr_code": 1063010280,
+            "x": 14.0,
+            "y": 63.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 40,
+            "qr_code": 1087010280,
+            "x": 14.0,
+            "y": 51.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 41,
+            "qr_code": 1103010280,
+            "x": 14.0,
+            "y": 43.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 43,
+            "qr_code": 1127010280,
+            "x": 14.0,
+            "y": 31.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 44,
+            "qr_code": 1139010280,
+            "x": 14.0,
+            "y": 25.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 46,
+            "qr_code": 1166010280,
+            "x": 14.0,
+            "y": 12.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 47,
+            "qr_code": 1178010280,
+            "x": 14.0,
+            "y": 6.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 48,
+            "qr_code": 1190010280,
+            "x": 14.0,
+            "y": 0.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 51,
+            "qr_code": 1024010420,
+            "x": 21.0,
+            "y": 83.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 52,
+            "qr_code": 1036010420,
+            "x": 21.0,
+            "y": 77.0,
+            "angle": 0.0,
+            "station_type": "station",
+            "station_name": "P2",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 53,
+            "qr_code": 1051010420,
+            "x": 21.0,
+            "y": 69.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 55,
+            "qr_code": 1075010420,
+            "x": 21.0,
+            "y": 57.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 57,
+            "qr_code": 1103010420,
+            "x": 21.0,
+            "y": 43.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 59,
+            "qr_code": 1127010420,
+            "x": 21.0,
+            "y": 31.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 60,
+            "qr_code": 1139010420,
+            "x": 21.0,
+            "y": 25.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 62,
+            "qr_code": 1166010420,
+            "x": 21.0,
+            "y": 12.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 64,
+            "qr_code": 1190010420,
+            "x": 21.0,
+            "y": 0.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 67,
+            "qr_code": 1127010000,
+            "x": 0.0,
+            "y": 31.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 79,
+            "qr_code": 1024010560,
+            "x": 28.0,
+            "y": 83.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 80,
+            "qr_code": 1036010560,
+            "x": 28.0,
+            "y": 77.0,
+            "angle": 0.0,
+            "station_type": "standby",
+            "station_name": "s2",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 81,
+            "qr_code": 1051010560,
+            "x": 28.0,
+            "y": 69.5,
+            "angle": 0.0,
+            "station_type": "standby",
+            "station_name": "s3",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 82,
+            "qr_code": 1063010560,
+            "x": 28.0,
+            "y": 63.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 83,
+            "qr_code": 1075010560,
+            "x": 28.0,
+            "y": 57.5,
+            "angle": 0.0,
+            "station_type": "standby",
+            "station_name": "s4",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 84,
+            "qr_code": 1087010560,
+            "x": 28.0,
+            "y": 51.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 85,
+            "qr_code": 1103010560,
+            "x": 28.0,
+            "y": 43.5,
+            "angle": 0.0,
+            "station_type": "standby",
+            "station_name": "s5",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 86,
+            "qr_code": 1115010560,
+            "x": 28.0,
+            "y": 37.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 87,
+            "qr_code": 1127010560,
+            "x": 28.0,
+            "y": 31.5,
+            "angle": 0.0,
+            "station_type": "standby",
+            "station_name": "s6",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 88,
+            "qr_code": 1139010560,
+            "x": 28.0,
+            "y": 25.5,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 89,
+            "qr_code": 1154010560,
+            "x": 28.0,
+            "y": 18.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 90,
+            "qr_code": 1166010560,
+            "x": 28.0,
+            "y": 12.0,
+            "angle": 0.0,
+            "station_type": "standby",
+            "station_name": "s7",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 91,
+            "qr_code": 1178010560,
+            "x": 28.0,
+            "y": 6.0,
+            "angle": 0.0,
+            "station_type": "point",
+            "station_name": "",
+            "charge_distance": 0.0
+        },
+        {
+            "id": 92,
+            "qr_code": 1190010560,
+            "x": 28.0,
+            "y": 0.0,
+            "angle": 0.0,
+            "station_type": "standby",
+            "station_name": "s8",
+            "charge_distance": 0.0
+        }
+    ],
+    "paths": [
+        {
+            "start_qr_id": 52,
+            "end_qr_id": 53,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                }
+            }
+        },
+        {
+            "start_qr_id": 59,
+            "end_qr_id": 60,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                }
+            }
+        },
+        {
+            "start_qr_id": 64,
+            "end_qr_id": 48,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 48,
+            "end_qr_id": 32,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 32,
+            "end_qr_id": 1,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 1,
+            "end_qr_id": 15,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                }
+            }
+        },
+        {
+            "start_qr_id": 15,
+            "end_qr_id": 13,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 13,
+            "end_qr_id": 28,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                }
+            }
+        },
+        {
+            "start_qr_id": 44,
+            "end_qr_id": 43,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 41,
+            "end_qr_id": 40,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 28,
+            "end_qr_id": 30,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                }
+            }
+        },
+        {
+            "start_qr_id": 30,
+            "end_qr_id": 46,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                }
+            }
+        },
+        {
+            "start_qr_id": 11,
+            "end_qr_id": 13,
+            "direction": "bidirectional",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 24,
+            "end_qr_id": 40,
+            "direction": "bidirectional",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 9,
+            "end_qr_id": 24,
+            "direction": "bidirectional",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 20,
+            "end_qr_id": 36,
+            "direction": "bidirectional",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 5,
+            "end_qr_id": 20,
+            "direction": "bidirectional",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 22,
+            "end_qr_id": 38,
+            "direction": "bidirectional",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 52,
+            "end_qr_id": 80,
+            "direction": "bidirectional",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 53,
+            "end_qr_id": 81,
+            "direction": "bidirectional",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 55,
+            "end_qr_id": 83,
+            "direction": "bidirectional",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 57,
+            "end_qr_id": 85,
+            "direction": "bidirectional",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 59,
+            "end_qr_id": 87,
+            "direction": "bidirectional",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 62,
+            "end_qr_id": 90,
+            "direction": "bidirectional",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 64,
+            "end_qr_id": 92,
+            "direction": "bidirectional",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 36,
+            "end_qr_id": 52,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                }
+            }
+        },
+        {
+            "start_qr_id": 40,
+            "end_qr_id": 38,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 53,
+            "end_qr_id": 55,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                }
+            }
+        },
+        {
+            "start_qr_id": 55,
+            "end_qr_id": 57,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                }
+            }
+        },
+        {
+            "start_qr_id": 57,
+            "end_qr_id": 59,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                }
+            }
+        },
+        {
+            "start_qr_id": 60,
+            "end_qr_id": 62,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                }
+            }
+        },
+        {
+            "start_qr_id": 62,
+            "end_qr_id": 64,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "A"
+                }
+            }
+        },
+        {
+            "start_qr_id": 43,
+            "end_qr_id": 41,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 38,
+            "end_qr_id": 36,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        },
+        {
+            "start_qr_id": 46,
+            "end_qr_id": 44,
+            "direction": "single",
+            "channel_mode": "normal",
+            "group_name": "",
+            "directional_properties": {
+                "ab": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                },
+                "ba": {
+                    "speed_limit": 0.0,
+                    "move_direction": "forward",
+                    "item": "B"
+                }
+            }
+        }
+    ],
+    "import_origin_qr_code": 1190010000
+}
