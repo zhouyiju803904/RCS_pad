@@ -1,7 +1,11 @@
 [project]
 name = "rcs-pad"
 version = "0.1.0"
-description = ""
+dependencies = [
+    "requests>=2.28.0",
+    "flet>=0.25.0",
+    # 如果有其他依赖，也加在这里
+]
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
