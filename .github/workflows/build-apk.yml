@@ -1,74 +1,42 @@
-# 工作流的名称
 name: Build Flet Android APK
 
-# 触发条件：当代码被推送到 main 分支时，或手动触发
 on:
   push:
     branches: [ main ]
-  # 允许从 GitHub 网页上手动启动这个工作流
   workflow_dispatch:
 
-# 定义环境变量，方便统一管理版本
-env:
-  PYTHON_VERSION: '3.11'
-  JAVA_VERSION: '17'
-
-# 任务（Job）定义
 jobs:
-  # 任务的 ID
   build-android:
-    # 任务的名称
-    name: Build Android APK
-    # 运行环境：使用 GitHub 提供的 Ubuntu 最新版
     runs-on: ubuntu-latest
-    # 设置超时时间，防止构建卡死
     timeout-minutes: 120
 
-    # 任务的具体步骤
     steps:
-      # 1. 检出你的代码
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2. 设置 Python 环境
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
-          cache: 'pip'
+          python-version: '3.11'
 
-      # 3. 安装 Python 项目依赖
-      - name: Install Python dependencies
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # 如果有 requirements.txt 就安装它，否则只安装 flet
-          if [ -f "requirements.txt" ]; then
-            pip install -r requirements.txt
-          else
-            pip install flet
-          fi
-          # 打印已安装的包，方便调试
-          pip list
+          if [ -f "requirements.txt" ]; then pip install -r requirements.txt; else pip install flet; fi
 
-      # 4. 设置 Java 环境（Flet 打包 Android 需要）
-      - name: Set up Java
+      - name: Set up Java (no Gradle cache)
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
-          java-version: ${{ env.JAVA_VERSION }}
-          cache: 'gradle'
+          java-version: '17'
+          # 不指定 cache，避免因项目中没有 gradle 文件而报错
 
-      # 5. 执行 APK 构建命令
       - name: Build APK
         run: |
-          # 执行 flet 的打包命令
           flet build apk
 
-      # 6. (可选) 上传生成的 APK 文件
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          # 给产出的文件包起个名字
           name: flet-android-apk
-          # 告诉 Actions 去哪里找生成的 APK 文件
           path: build/apk/**/*.apk
