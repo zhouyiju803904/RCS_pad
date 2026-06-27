@@ -1,6 +1,6 @@
 # ui.py
 import flet as ft
-from api import fetch_task_list
+from api import fetch_storage_list, fetch_task_list, get_server_base_url, set_server_base_url
 from models import AGVStatus, Task
 
 
@@ -119,7 +119,7 @@ def build_storage_view(storage_list: list):
 
 def build_config_view():
     """参数配置页面。"""
-    server_field = ft.TextField(label="服务端地址", value="http://192.168.1.66:52000", expand=True)
+    server_field = ft.TextField(label="服务端地址", value=get_server_base_url(), expand=True)
     refresh_interval_field = ft.TextField(label="自动刷新间隔(秒)", value="5", width=180)
     page_size_field = ft.TextField(label="默认每页条数", value="7", width=180)
     auto_refresh_switch = ft.Switch(label="启用自动刷新", value=True)
@@ -127,11 +127,13 @@ def build_config_view():
     status_text = ft.Text("", color="#1976D2")
 
     def save_config(e):
-        status_text.value = "参数已保存"
+        set_server_base_url(server_field.value)
+        status_text.value = f"参数已保存，当前地址：{get_server_base_url()}"
         status_text.update()
 
     def reset_config(e):
-        server_field.value = "http://192.168.1.66:52000"
+        server_field.value = "http://192.168.1.67:52000"
+        set_server_base_url(server_field.value)
         refresh_interval_field.value = "5"
         page_size_field.value = "7"
         auto_refresh_switch.value = True
@@ -187,7 +189,22 @@ def build_config_view():
 
 def build_storage_panel(storage_list: list):
     """库位筛选 + 卡片展示面板。"""
-    
+
+    current_filters = {"status": "all", "slot_id": "", "occupant": ""}
+    cards_container = ft.Container(expand=True)
+
+    def refresh_cards():
+        data = fetch_storage_list(filters={
+            "status": current_filters["status"],
+            "slot_id": current_filters["slot_id"],
+            "occupant": current_filters["occupant"],
+        })
+        cards_container.content = build_storage_cards(data)
+        try:
+            cards_container.update()
+        except RuntimeError:
+            pass
+
     # 筛选控件
     status_dropdown = ft.Dropdown(
         width=150,
@@ -205,20 +222,32 @@ def build_storage_panel(storage_list: list):
     slot_id_field = ft.TextField(label="库位ID", expand=True)
     occupant_field = ft.TextField(label="占用者", expand=True)
 
+    def apply_filters(e):
+        current_filters["status"] = status_dropdown.value or "all"
+        current_filters["slot_id"] = slot_id_field.value or ""
+        current_filters["occupant"] = occupant_field.value or ""
+        refresh_cards()
+
+    def reset_filters(e):
+        status_dropdown.value = "all"
+        slot_id_field.value = ""
+        occupant_field.value = ""
+        current_filters.update({"status": "all", "slot_id": "", "occupant": ""})
+        refresh_cards()
+
     filter_row = ft.Row(
         [
             status_dropdown,
             slot_id_field,
             occupant_field,
-            ft.ElevatedButton("筛选", icon=ft.Icons.SEARCH),
-            ft.TextButton("重置"),
+            ft.ElevatedButton("筛选", icon=ft.Icons.SEARCH, on_click=apply_filters),
+            ft.TextButton("重置", on_click=reset_filters),
         ],
         alignment=ft.MainAxisAlignment.START,
         spacing=12,
     )
 
-    # 库位卡片
-    cards_view = build_storage_cards(storage_list)
+    refresh_cards()
 
     return ft.Container(
         bgcolor="#FFFFFF",
@@ -228,7 +257,7 @@ def build_storage_panel(storage_list: list):
         content=ft.Column(
             [
                 filter_row,
-                ft.Container(expand=True, content=cards_view),
+                cards_container,
             ],
             spacing=12,
             expand=True,

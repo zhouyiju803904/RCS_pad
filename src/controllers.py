@@ -1,6 +1,9 @@
 # src/controllers.py
+import uuid
+
 import flet as ft
-from api import send_stop_command, create_task, pause_all_agvs
+import requests
+from api import build_api_url, send_stop_command, create_task, pause_all_agvs
 
 # ---------- 通用辅助函数 ----------
 def show_snackbar(page: ft.Page, message: str, color: str = None):
@@ -65,8 +68,38 @@ def open_task_creation_dialog(page: ft.Page):
             if start_point and end_point:
                 path = f"{start_point} -> {end_point}"
                 print(f"[DEBUG] 创建任务：{path}")
-                success = create_task("auto", path)
-                if success:
+
+                payload = {
+                  "id":str(uuid.uuid4()).replace("-", ""),
+                  "name":"手动任务",
+                  "priority":1,
+                   "taskJson":[
+                        {
+                            "type":"Move",
+                            "targetName":start_point,
+                            "Parameters":{
+                                "height":60
+                            }
+                        },
+                        {
+                            "type":"Move",
+                            "targetName":end_point,
+                            "Parameters":
+                            {
+                                "height":0
+                            }
+                        }
+                   ]
+                }
+                headers = {"Content-Type": "application/json"}
+
+  
+                resp = requests.post(build_api_url("/api/task/create"), json=payload, headers=headers, timeout=10000)
+
+                resp.raise_for_status()
+                result = resp.json()
+                success = result.get("code", 404)
+                if success == 0:
                     show_snackbar(page, f"✅ 任务已创建：{path}")
                 else:
                     show_snackbar(page, "❌ 任务创建失败", color=ft.Colors.ORANGE)
@@ -77,7 +110,7 @@ def open_task_creation_dialog(page: ft.Page):
             on_cancel(None)
 
         def on_cancel(e):
-            print("[DEBUG] 取消任务创建")
+          
             # 先尝试关闭通过 page.show_dialog 打开的对话框
             try:
                 page.pop_dialog()
