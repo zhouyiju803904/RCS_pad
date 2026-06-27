@@ -117,6 +117,74 @@ def build_storage_view(storage_list: list):
     )
 
 
+def build_config_view():
+    """参数配置页面。"""
+    server_field = ft.TextField(label="服务端地址", value="http://192.168.1.66:52000", expand=True)
+    refresh_interval_field = ft.TextField(label="自动刷新间隔(秒)", value="5", width=180)
+    page_size_field = ft.TextField(label="默认每页条数", value="7", width=180)
+    auto_refresh_switch = ft.Switch(label="启用自动刷新", value=True)
+    debug_switch = ft.Switch(label="显示调试日志", value=False)
+    status_text = ft.Text("", color="#1976D2")
+
+    def save_config(e):
+        status_text.value = "参数已保存"
+        status_text.update()
+
+    def reset_config(e):
+        server_field.value = "http://192.168.1.66:52000"
+        refresh_interval_field.value = "5"
+        page_size_field.value = "7"
+        auto_refresh_switch.value = True
+        debug_switch.value = False
+        status_text.value = "已恢复默认配置"
+        server_field.update()
+        refresh_interval_field.update()
+        page_size_field.update()
+        auto_refresh_switch.update()
+        debug_switch.update()
+        status_text.update()
+
+    return ft.Container(
+        bgcolor="#FFFFFF",
+        border_radius=10,
+        expand=True,
+        padding=10,
+        content=ft.Column(
+            [
+                ft.Text("参数配置", size=20, weight=ft.FontWeight.BOLD),
+                ft.Text("可在这里调整连接地址、刷新策略和分页默认值。", size=13, color="#666"),
+                ft.Row(
+                    [
+                        server_field,
+                        ft.ElevatedButton("保存", icon=ft.Icons.SAVE, on_click=save_config),
+                        ft.TextButton("重置", on_click=reset_config),
+                    ],
+                    spacing=12,
+                    vertical_alignment=ft.CrossAxisAlignment.END,
+                ),
+                ft.Row(
+                    [
+                        refresh_interval_field,
+                        page_size_field,
+                    ],
+                    spacing=12,
+                ),
+                ft.Row(
+                    [
+                        auto_refresh_switch,
+                        debug_switch,
+                    ],
+                    spacing=24,
+                ),
+                status_text,
+            ],
+            spacing=14,
+            expand=True,
+            horizontal_alignment=ft.CrossAxisAlignment.STRETCH,
+        ),
+    )
+
+
 def build_storage_panel(storage_list: list):
     """库位筛选 + 卡片展示面板。"""
     
@@ -173,9 +241,10 @@ def build_management_tabs(task_list: list[Task], agv_list: list[AGVStatus], stor
     task_view = build_task_view(task_list)
     agv_view = build_agv_view(agv_list)
     storage_view = build_storage_view(storage_list) if storage_list else ft.Container()
+    config_view = build_config_view()
 
     tabs = ft.Tabs(
-        length=3,
+        length=4,
         expand=True,
         content=ft.Column(
             expand=True,
@@ -186,6 +255,7 @@ def build_management_tabs(task_list: list[Task], agv_list: list[AGVStatus], stor
                         ft.Tab(label="任务管理"),
                         ft.Tab(label="AGV 管理"),
                         ft.Tab(label="库位管理"),
+                        ft.Tab(label="参数配置"),
                     ],
                     indicator_color="#1976D2",
                     label_color="#1976D2",
@@ -193,12 +263,13 @@ def build_management_tabs(task_list: list[Task], agv_list: list[AGVStatus], stor
                 ),
                 ft.TabBarView(
                     expand=True,
-                    controls=[task_view, agv_view, storage_view],
+                    controls=[task_view, agv_view, storage_view, config_view],
                 ),
             ],
         ),
     )
     tabs.agv_view = agv_view
+    tabs.config_view = config_view
     return tabs
 
 
