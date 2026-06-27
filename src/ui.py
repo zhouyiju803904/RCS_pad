@@ -205,7 +205,7 @@ def build_management_tabs(task_list: list[Task], agv_list: list[AGVStatus], stor
 def build_task_panel(task_list: list[Task]):
     """任务筛选 + 列表面板：支持按服务端分页和筛选加载。"""
 
-    page_size = 7
+    page_size = 5
     current_page = {"index": 0}
     current_filters = {"status": "all", "task_id": "", "agv": "", "path": ""}
 
